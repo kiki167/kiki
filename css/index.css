@@ -1,0 +1,32 @@
+body{
+    background-color:#00003f;
+}
+header{
+	margin:5% 30% 0% 30%;
+	text-align:center;
+	color:#0000a6;
+	border-radius:12px 12px 0px 0px;
+	background-color:#00000c;
+	border:#0000a6 1px dotted;
+}
+main{
+	margin:0% 30% 0% 30%;
+	background-color:#00000c;
+}
+fieldset{
+	text-align:center;
+	color:white;
+	overflow:auto;
+	border:white 1px solid;
+}
+input{
+	text-align:center;
+	background-color: #000073;
+	border:#0000a6 1px;
+	color:white;
+	font-weight:bold;
+}
+p{
+	text-align:center;
+	color:white;
+}
