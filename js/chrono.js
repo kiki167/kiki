@@ -29,16 +29,17 @@ function decompte()
             }
             document.getElementById("chrono").innerHTML = "<p>temps restant: " +m+min+s+sec +"</p>"
             document.getElementById("pause").innerHTML ="<button onclick='myFunction()'>Pause</button>";
-            document.getElementById("continue").innerHTML = "<button onclick='myFunction1()'>Recommencer</button>";
+            document.getElementById("recommencer").innerHTML = "<button onclick='myFunction1()'>Recommencer</button>";
             cpt-- ;
             x = setTimeout("decompte()",1000) ;
         }
 		else if(recommencer==1){
+			cpt=1500 ;
+            x = setTimeout("decompte()",1000) ;
 			document.getElementById("chrono").innerHTML = "<p>temps restant: " +m+min+s+sec +"</p>"
             document.getElementById("pause").innerHTML ="<button onclick='myFunction()'>Pause</button>";
-            document.getElementById("continue").innerHTML = "<button onclick='myFunction1()'>Recommencer</button>";
-            cpt=1500 ;
-            x = setTimeout("decompte()",1000) ;
+            document.getElementById("recommencer").innerHTML = "<button onclick='myFunction1()'>Recommencer</button>";
+			recommencer=0;
 		}
 		else{
             document.getElementById("pause").innerHTML = "";
