@@ -1,5 +1,5 @@
 
-var cpt = 1500 ;
+var cpt = 10 ;
 var x ;
 var pause=0;
 var recommencer
@@ -57,14 +57,13 @@ function decompte()
                 var sec = " secondes.";
             }
             document.getElementById("chrono").innerHTML = "<p>temps restant: " +m+min+s+sec +"</p>"
-            document.getElementById("continue").innerHTML ="<button onclick='myFunction()'>Start</button>";
+            document.getElementById("continue").innerHTML ="<button onclick='myFunction()'>Continuez</button>";
             document.getElementById("recommencer").innerHTML = "<button onclick='myFunction1()'>Recommencer</button>";
             x = setTimeout("decompte()",1000);
-			recommencer=0;
 		}else{
             document.getElementById("pause").innerHTML = "";
 			document.getElementById("recommencer").innerHTML = "<button onclick='myFunction1()'>Recommencer</button>";
-            document.getElementById("continue").innerHTML = "<button onclick='myFunction()'>continuez</button>";
+            document.getElementById("continue").innerHTML = "<button onclick='myFunction()'>Continuez</button>";
             x = setTimeout("decompte()",1000) ;
         }
         
