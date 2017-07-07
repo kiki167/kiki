@@ -28,10 +28,11 @@ function decompte()
             	var min = " minute et ";
                 var sec = " secondes.";
             }
+			document.getElementById("recommencer").innerHTML = "<button onclick='myFunction1()'>Recommencer</button>";
+
             document.getElementById("chrono").innerHTML = "<p>temps restant: " +m+min+s+sec +"</p>"
             document.getElementById("pause").innerHTML ="<button onclick='myFunction()'>Pause</button>";
             document.getElementById("continuer").innerHTML = "";
-			document.getElementById("recommencer").innerHTML = "<button onclick='myFunction1()'>Recommencer</button>";
             cpt-- ;
             x = setTimeout("decompte()",1000) ;
         }else if(recommencer==1){
