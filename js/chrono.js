@@ -36,6 +36,25 @@ function decompte()
             x = setTimeout("decompte()",1000) ;
         }else if(recommencer==1){
 			cpt = 1500;
+			if(cpt>60)
+           {	
+        	var m=Math.trunc(cpt/60);
+           	var s=(cpt % 60);
+          	var min = " minutes et ";
+            var sec = " secondes.";
+            } 
+            else if(cpt==1){
+                var m=0;
+                var s=cpt%60;
+                var min = " minute et ";
+                var sec = " seconde.";
+            }
+            else {
+            	var m=0;
+            	var s=cpt%60;
+            	var min = " minute et ";
+                var sec = " secondes.";
+            }
             document.getElementById("chrono").innerHTML = "<p>temps restant: " +m+min+s+sec +"</p>"
             document.getElementById("pause").innerHTML ="<button onclick='myFunction()'>Pause</button>";
             document.getElementById("recommencer").innerHTML = "<button onclick='myFunction1()'>Recommencer</button>";
@@ -62,7 +81,6 @@ function myFunction1() {
         recommencer=0;
     }
 }
-
 
 function myFunction() {
     if(pause==0){
