@@ -32,7 +32,7 @@ function decompte()
             }
 			document.getElementById("recommencer").innerHTML = "";
             document.getElementById("chrono").innerHTML = "<p>temps restant: " +m+min+s+sec +"</p>"
-            document.getElementById("pause").innerHTML ="<button onclick='myFunction()'>Pause</button>";
+            document.getElementById("pause").innerHTML ="<button onclick='myFunction()'>Stop</button>";
             document.getElementById("continuer").innerHTML = "";
             cpt-- ;
             x = setTimeout("decompte()",1000) ;
