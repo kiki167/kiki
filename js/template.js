@@ -81,14 +81,14 @@ var formatNPSUrl = function(t, url){
 
 var boardButtonCallback = function(t){
   return t.popup({
-    title: 'Popup List Example',
+    title: 'Start the Timer',
     items: [
       {
         text: 'Open Board Bar',
         callback: function(t){
           return t.boardBar({
             url: './board-bar.html',
-            height: 200
+            height: 250
           })
           .then(function(){
             return t.closePopup();
