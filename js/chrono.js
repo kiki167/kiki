@@ -2,7 +2,7 @@
 var cpt = 10 ;
 var x ;
 var pause=0;
-var recommencer
+var recommencer=0;
 
 function decompte()
 {
@@ -30,8 +30,8 @@ function decompte()
             }
             document.getElementById("chrono").innerHTML = "<p>temps restant: " +m+min+s+sec +"</p>"
             document.getElementById("pause").innerHTML ="<button onclick='myFunction()'>Pause</button>";
-            document.getElementById("continue").innerHTML = "";
-			document.getElementById("recommencer").innerHTML = "";
+            document.getElementById("continuer").innerHTML = "";
+			document.getElementById("recommencer").innerHTML = "<button onclick='myFunction1()'>Recommencer</button>";
             cpt-- ;
             x = setTimeout("decompte()",1000) ;
         }else if(recommencer==1){
@@ -57,13 +57,13 @@ function decompte()
                 var sec = " secondes.";
             }
             document.getElementById("chrono").innerHTML = "<p>temps restant: " +m+min+s+sec +"</p>"
-            document.getElementById("continue").innerHTML ="<button onclick='myFunction()'>Continuez</button>";
+            document.getElementById("continuer").innerHTML ="<button onclick='myFunction()'>Continuer</button>";
             document.getElementById("recommencer").innerHTML = "<button onclick='myFunction1()'>Recommencer</button>";
             x = setTimeout("decompte()",1000);
 		}else{
             document.getElementById("pause").innerHTML = "";
 			document.getElementById("recommencer").innerHTML = "<button onclick='myFunction1()'>Recommencer</button>";
-            document.getElementById("continue").innerHTML = "<button onclick='myFunction()'>Continuez</button>";
+            document.getElementById("continuer").innerHTML = "<button onclick='myFunction()'>Continuer</button>";
             x = setTimeout("decompte()",1000) ;
         }
         
