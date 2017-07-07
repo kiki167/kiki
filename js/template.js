@@ -89,7 +89,6 @@ var boardButtonCallback = function(t){
           return t.boardBar({
             url: './board-bar.html',
             height: 200
-            width:100
           })
           .then(function(){
             return t.closePopup();
