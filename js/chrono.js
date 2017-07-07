@@ -31,7 +31,7 @@ function decompte()
                 var sec = " secondes.";
             }
 			document.getElementById("recommencer").innerHTML = "";
-            document.getElementById("chrono").innerHTML = "<p>temps restant: " +m+min+s+sec +"</p>"
+            document.getElementById("chrono").innerHTML = "<p>time left: " +m+min+s+sec +"</p>"
             document.getElementById("pause").innerHTML ="<button onclick='myFunction()'>Stop</button>";
             document.getElementById("continuer").innerHTML = "";
             cpt-- ;
@@ -58,7 +58,7 @@ function decompte()
             	var min = " minute et ";
                 var sec = " secondes.";
             }
-            document.getElementById("chrono").innerHTML = "<p>temps restant: " +m+min+s+sec +"</p>"
+            document.getElementById("chrono").innerHTML = "<p>time left: " +m+min+s+sec +"</p>"
             document.getElementById("continuer").innerHTML ="<button onclick='myFunction()'>Start</button>";
             document.getElementById("recommencer").innerHTML = "<button onclick='myFunction1()'>Restart</button>";
             x = setTimeout("decompte()",1000);
