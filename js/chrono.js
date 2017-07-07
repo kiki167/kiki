@@ -36,6 +36,7 @@ function decompte()
             x = setTimeout("decompte()",1000) ;
         }else if(recommencer==1){
 			cpt = 1500;
+			recommencer=0;
 			if(cpt>60)
            {	
         	var m=Math.trunc(cpt/60);
