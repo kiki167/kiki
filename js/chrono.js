@@ -57,7 +57,7 @@ function decompte()
                 var sec = " secondes.";
             }
             document.getElementById("chrono").innerHTML = "<p>temps restant: " +m+min+s+sec +"</p>"
-            document.getElementById("pause").innerHTML ="<button onclick='myFunction()'>Pause</button>";
+            document.getElementById("continue").innerHTML ="<button onclick='myFunction()'>Start</button>";
             document.getElementById("recommencer").innerHTML = "<button onclick='myFunction1()'>Recommencer</button>";
             x = setTimeout("decompte()",1000);
 			recommencer=0;
