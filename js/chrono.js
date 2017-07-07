@@ -1,5 +1,5 @@
 
-var cpt = 10 ;
+var cpt = 1500 ;
 var x ;
 var pause=0;
 var recommencer=0;
