@@ -6,7 +6,7 @@ var recommencer=0;
 
 function decompte()
 {
-    document.getElementById("h1").innerHTML ="Il vous reste:";
+    document.getElementById("h1").innerHTML ="You still have:";
 
      if(cpt>=0){
         if(pause==0)
