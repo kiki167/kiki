@@ -4,21 +4,11 @@
     <link rel="stylesheet" href="./css/overlay.css">
     <script src="https://trello.com/power-ups/power-up.min.js"></script>
   </head>
-  <body>
+  <body onload="decompte();">
     <div id="content">
       <h2>Vous avez 25 min pour réaliser votre tâche</h2>
       <hr/>
       <ol>
-        <main>
-        <form action="php/chrono.php" method="POST">
-          <fieldset>
-            <input type="text" placeholder="Tâche à faire maintenant" name="tache"/>
-          </fieldset>
-          <fieldset>
-            <input type="submit" value="Envoyer">
-          </fieldset>
-        </form>
-      </main>
     </div>
     <script src="./js/overlay.js"></script>
   </body>
